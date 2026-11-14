@@ -751,3 +751,7 @@ input[type="range"]::-moz-range-thumb { width: 28px; height: 28px; border: 0; bo
 .sol-cell { font: 600 0.8125rem/1.4 var(--font); color: var(--label-2); grid-row: span 2; min-width: 34px; }
 .sol-list code { justify-self: start; overflow-wrap: anywhere; }
 .sol-why { font: var(--subhead); color: var(--label-2); line-height: 1.45; }
+
+/* Wide tables and sheets scroll inside their own box instead of widening the lesson column. */
+.flow { grid-template-columns: minmax(0, 1fr); }
+.flow > * { min-width: 0; }
